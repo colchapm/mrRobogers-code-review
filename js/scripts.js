@@ -6,14 +6,16 @@
 
 // Business Logic
 
-const userNumber = 15;
+const userNumber = 6;
 let outputArray = [];
 const strNumber = userNumber.toString();
 
 function beepBoop(userNumber) {
   for (let i = 0; i < strNumber.length; i ++) {
     outputArray.push(strNumber[i]);
-  } if (outputArray.join().includes(1)) {
+  } if (outputArray.join().includes(2)) {
+      outputArray = ["Boop!"]
+  } else if (outputArray.join().includes(1)) {
       outputArray = ["Beep!"];
   } else {
       outputArray = [];
