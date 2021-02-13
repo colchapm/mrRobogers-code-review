@@ -6,10 +6,23 @@
 
 // Business Logic
 
-const userNumber = 5
-const outputArray = [];
+const userNumber = 15;
+let outputArray = [];
+const strNumber = userNumber.toString();
 
 function beepBoop(userNumber) {
+  for (let i = 0; i < strNumber.length; i ++) {
+    outputArray.push(strNumber[i]);
+  } if (outputArray.join().includes(1)) {
+      outputArray = ["Beep!"];
+  } else {
+      outputArray = [];
+      boopBoop(userNumber);
+  }
+}
+
+
+function boopBoop(userNumber) {
   for (let i =0; i <= userNumber; i ++) {
     if (i === 1) {
       outputArray.push("Beep!");
@@ -22,4 +35,4 @@ function beepBoop(userNumber) {
     }
   }
 
-beepBoop(userNumber)
+beepBoop(userNumber);
