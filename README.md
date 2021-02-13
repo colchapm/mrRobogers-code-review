@@ -46,6 +46,9 @@ Expect(beepBoop(5)).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4
 **Test 5** Test: "If the user inputs a number that contains a 1, all digits are replaced with "Beep!"".
 Expect(beepBoop(15)).toEqual("Beep!")
 
+**Test 6** Test: "If the user inputs a number that contains a 2, all digits are replaced with "Boop!"". This rule will also return "Boop!" if the user inputs a number that contains both a 1 and a 2.
+Expect(beepBoop(21)).toEqual("Boop!")
+
 ## Known Bugs
 
 No known bugs at this time
