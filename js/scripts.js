@@ -6,13 +6,13 @@
 
 // Business Logic
 
-const userNumber = 2
+const userNumber = 3
 const outputArray = [];
 
 function beepBoop(userNumber) {
   for (let i =0; i <= userNumber; i ++) {
-    if (i === 2) {
-      outputArray.push("Boop!");
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor?");
     } else {
     }
     }
