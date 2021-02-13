@@ -6,15 +6,17 @@
 
 // Business Logic
 
-const userNumber = 6;
+const userNumber = 31;
 let outputArray = [];
 const strNumber = userNumber.toString();
 
 function beepBoop(userNumber) {
   for (let i = 0; i < strNumber.length; i ++) {
     outputArray.push(strNumber[i]);
-  } if (outputArray.join().includes(2)) {
-      outputArray = ["Boop!"]
+  } if (outputArray.join().includes(3)) {
+    outputArray = ["Won't you be my neighbor?"];
+  } else if (outputArray.join().includes(2)) {
+      outputArray = ["Boop!"];
   } else if (outputArray.join().includes(1)) {
       outputArray = ["Beep!"];
   } else {
