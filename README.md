@@ -27,6 +27,12 @@ This webpage takes a number from a user and returns a range of numbers from 0 to
   2. Navigate to the top level of the directory
   3. Open index.html in your browser 
 
+## Tests
+
+Describe: beepBoop();
+
+**Test 1** Test: "If the user inputs the number 1, it is replaced with "Beep!"".
+Expect(beepBoop(1)).toEqual("Beep!")
 
 ## Known Bugs
 
