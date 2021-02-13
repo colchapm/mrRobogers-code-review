@@ -44,8 +44,8 @@ $(document).ready(function() {
     event.preventDefault();
     const userNumber = parseInt($("input#userInput").val());
     let result = beepBoop(userNumber)
-  })
+
+    $("#result").text(result.join(", "))
+  });
 });
 
-
-//console.log(outputArray.join(", "))
