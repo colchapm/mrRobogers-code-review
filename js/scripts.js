@@ -1,16 +1,10 @@
 
-
-
-
-
-
 // Business Logic
 
-const userNumber = 31;
-let outputArray = [];
-const strNumber = userNumber.toString();
 
 function beepBoop(userNumber) {
+  let outputArray = [];
+  const strNumber = userNumber.toString();
   for (let i = 0; i < strNumber.length; i ++) {
     outputArray.push(strNumber[i]);
   } if (outputArray.join().includes(3)) {
@@ -23,20 +17,35 @@ function beepBoop(userNumber) {
       outputArray = [];
       boopBoop(userNumber);
   }
+
+  function boopBoop(userNumber) {
+    
+    for (let i =0; i <= userNumber; i ++) {
+      if (i === 1) {
+        outputArray.push("Beep!");
+    } else if (i === 2) {
+        outputArray.push("Boop!");
+    } else if (i === 3) {
+        outputArray.push("Won't you be my neighbor?");
+    } else {
+        outputArray.push(i);
+      }
+    }
+    return outputArray
+  }
+  return outputArray
 }
 
 
-function boopBoop(userNumber) {
-  for (let i =0; i <= userNumber; i ++) {
-    if (i === 1) {
-      outputArray.push("Beep!");
-    } else if (i === 2) {
-      outputArray.push("Boop!");
-    } else if (i === 3) {
-      outputArray.push("Won't you be my neighbor?");
-    } else { outputArray.push(i);
-    }
-    }
-  }
+// User interface logic
 
-beepBoop(userNumber);
+$(document).ready(function() {
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    const userNumber = parseInt($("input#userInput").val());
+    let result = beepBoop(userNumber)
+  })
+});
+
+
+//console.log(outputArray.join(", "))
