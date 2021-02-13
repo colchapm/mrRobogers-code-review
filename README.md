@@ -43,6 +43,9 @@ Expect(beepBoop(3)).toEqual("Won't you be my neighbor?")
 **Test 4** Test: "If the user inputs the number 5, it should be replaced with a list of values of 0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5
 Expect(beepBoop(5)).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5])
 
+**Test 5** Test: "If the user inputs a number that contains a 1, all digits are replaced with "Beep!"".
+Expect(beepBoop(15)).toEqual("Beep!")
+
 ## Known Bugs
 
 No known bugs at this time
