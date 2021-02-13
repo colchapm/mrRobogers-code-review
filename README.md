@@ -34,8 +34,11 @@ Describe: beepBoop();
 **Test 1** Test: "If the user inputs the number 1, it is replaced with "Beep!"".
 Expect(beepBoop(1)).toEqual("Beep!")
 
-**Test 2** Test: "If the user inputs a number the number 2, it is replaced with "Boop!"".
+**Test 2** Test: "If the user inputs the number 2, it is replaced with "Boop!"".
 Expect(beepBoop(2)).toEqual("Boop!")
+
+**Test 3** Test: "If the user inputs the number 3, it is replaced with "Won't you be my neighbor?"".
+Expect(beepBoop(3)).toEqual("Won't you be my neighbor?")
 
 ## Known Bugs
 
