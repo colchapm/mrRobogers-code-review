@@ -33,15 +33,15 @@ Describe: beepBoop();
 
 **Test 1** Test: "The program should replace the number 1 with "Beep!"".
 
-Expect(beepBoop(1)).toEqual("Beep!")
+Expect(beepBoop(1)).toEqual(0, "Beep!")
 
-**Test 2** Test: "If the user inputs the number 2, it is replaced with "Boop!"".
+**Test 2** Test: "The program should replace the number 2 with "Boop!"".
 
-Expect(beepBoop(2)).toEqual("Boop!")
+Expect(beepBoop(2)).toEqual(0, "Beep!", "Boop!")
 
-**Test 3** Test: "If the user inputs the number 3, it is replaced with "Won't you be my neighbor?"".
+**Test 3** Test: "The program should replace the number 3 with "Won't you be my neighbor?"".
 
-Expect(beepBoop(3)).toEqual("Won't you be my neighbor?")
+Expect(beepBoop(3)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?")
 
 **Test 4** Test: "If the user inputs the number 5, it should be replaced with a list of values of 0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5
 
