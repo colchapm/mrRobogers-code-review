@@ -51,13 +51,13 @@ Expect(beepBoop(5)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4,
 
 Expect(beepBoop(10)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!")
 
-**Test 6** Test: "If the user inputs a number that contains a 2, all digits are replaced with "Boop!"". This rule will also return "Boop!" if the user inputs a number that contains both a 1 and a 2.
+**Test 6** Test: "The program should replace all digits in a number that contains 2 with "Boop!"".
 
-Expect(beepBoop(21)).toEqual("Boop!")
+Expect(beepBoop(12)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!")
 
-**Test 7** Test: "If the user inputs a number that contains a 3, all digits are replaced with "Won't you be my neighbor?". This rule will also return "Won't you be my neighbor?" if the user inputs a number that contains a 3 along with a 1 or a 2.
+**Test 7** Test: "The program should replace all digits in a number that contains 3 with "Won't you be my neighbor?"".
 
-Expect(beepBoop(31)).toEqual("Won't you be my neighbor?")
+Expect(beepBoop(13)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?")
 
 ## Known Bugs
 
