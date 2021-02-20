@@ -43,13 +43,13 @@ Expect(beepBoop(2)).toEqual(0, "Beep!", "Boop!")
 
 Expect(beepBoop(3)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?")
 
-**Test 4** Test: "If the user inputs the number 5, it should be replaced with a list of values of 0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5
+**Test 4** Test: "The program should replace the number 5 with 5".
 
-Expect(beepBoop(5)).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5])
+Expect(beepBoop(5)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5)
 
-**Test 5** Test: "If the user inputs a number that contains a 1, all digits are replaced with "Beep!"".
+**Test 5** Test: "The program should replace all digits in a number that contains 1 with "Beep!"".
 
-Expect(beepBoop(15)).toEqual("Beep!")
+Expect(beepBoop(10)).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!")
 
 **Test 6** Test: "If the user inputs a number that contains a 2, all digits are replaced with "Boop!"". This rule will also return "Boop!" if the user inputs a number that contains both a 1 and a 2.
 
