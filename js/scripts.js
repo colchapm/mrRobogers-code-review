@@ -25,21 +25,21 @@ function beepBoop(userNumber, userName) {
 
 // User interface logic
 
+
 $(document).ready(function() {
   $("#name-form").submit(function(event) {
     event.preventDefault();
-    const userName = $("input#userName").val();
     $("#number-form").show();
     $("#name-form").hide();
 
-  $("#number-form").submit(function(event) {
+    $("#number-form").submit(function(event) {
     event.preventDefault();
     const userNumber = parseInt($("input#userInput").val());
-    const userName = "Collin";
+    const userName = $("input#userName").val();
     let result = beepBoop(userNumber, userName)
 
     $("#result").text(result.join(", "));
 
+    });
   });
-});
 });
