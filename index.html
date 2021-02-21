@@ -9,14 +9,22 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Welcome to Mr Roboger's Neighborhood</h2>
-		<form id="form">
+		<h2 class="title">Welcome to Mr Roboger's Neighborhood</h2>
+		<form id="name-form">
+			<div class="form-group">
+				<label for="userName">Before we start, tell us your name.</label>
+				<input id="userName" class="form-control" type="text">
+			</div>
+
+			<button type="submit" class="nameButton">Let's have some fun</button>
+		</form>
+		<form id="number-form">
 			<div class="form-group">
 				<label for="userInput">Please enter a number:</label>
 				<input id="userInput" class="form-control" type="number">
 			</div>
 
-			<button type="submit" class="btn">See what Mr. Roboger has to say!</button>
+			<button type="submit" class="numberButton">See what Mr. Roboger has to say</button>
 		</form>
 
 		<span id="result"></span>
